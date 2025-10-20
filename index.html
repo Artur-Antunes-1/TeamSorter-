@@ -428,7 +428,10 @@
             
             playerListContainer.addEventListener('click', (e) => {
                 const removeBtn = e.target.closest('.remove-player-btn');
-                if (removeBtn) { removePlayer(parseInt(removeBtn.dataset.id)); }
+                if (removeBtn) { 
+                    const id = parseFloat(removeBtn.dataset.id); // Correção aqui
+                    removePlayer(id); 
+                }
             });
             
             generateTeamsBtn.addEventListener('click', generateTeams);
@@ -447,5 +450,6 @@
     </script>
 </body>
 </html>
+
 
 
