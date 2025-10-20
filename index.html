@@ -113,6 +113,10 @@
                  </div>
             </div>
         </main>
+
+        <footer class="text-center mt-8 py-4 border-t border-gray-700 text-gray-500 text-sm">
+            <p>Desenvolvido por <a href="https://github.com/Artur-Antunes-1" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:underline">Artur Antunes</a></p>
+        </footer>
     </div>
 
     <!-- Modal IA -->
@@ -429,7 +433,7 @@
             playerListContainer.addEventListener('click', (e) => {
                 const removeBtn = e.target.closest('.remove-player-btn');
                 if (removeBtn) { 
-                    const id = parseFloat(removeBtn.dataset.id); // Correção aqui
+                    const id = parseFloat(removeBtn.dataset.id); 
                     removePlayer(id); 
                 }
             });
@@ -450,6 +454,7 @@
     </script>
 </body>
 </html>
+
 
 
 
